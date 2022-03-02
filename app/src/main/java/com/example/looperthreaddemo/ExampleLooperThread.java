@@ -17,7 +17,7 @@ public class ExampleLooperThread extends Thread {
         Log.d(TAG, "start of run: ");
         Looper.prepare();
         looper = Looper.myLooper();
-        looperThreadHandler =  new Handler();
+        looperThreadHandler =  new ExampleHandler();
         Looper.loop();
         Log.d(TAG, "end of run: ");
     }
